@@ -1,0 +1,60 @@
+
+.numeros{
+    width: 100%;
+    display: table;
+    padding: 10px 10px 5px 10px;
+}
+label{
+    position: relative;
+}
+.clicado + .mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    border: 1px dotted #ffa500;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%; */
+
+}
+.painel_numero {
+    text-align: center;
+    width: 100%;
+    height: 250px !important;
+    padding: 20px;
+    float: left;
+    display: table;
+}
+.painel_numero h1{
+    text-align: center;
+    font-size: 160px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+.numeros p{
+    font-weight: bold;
+    color: red;
+}
+.numeros p,
+.numeros label{
+    padding: 0 5px;
+    font-size: 40px;
+    margin: 0.1%;
+    width: 6%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.novo, .novo:hover{
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    color: #ffa500;
+    border: 1px dotted #ffa500;
+}
